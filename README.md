@@ -1,5 +1,5 @@
 ### 基础知识
-Learning-01-01：用一个HelloWord来阐述SpringBoot的简单与快速
+> Learning-01-01：用一个HelloWord来阐述SpringBoot的简单与快速
 Learning-02-01：SpringBoot与JSP间不可描述的秘密
 Learning-03-01：SpringBoot使用SpringDataJPA完成CRUD
 Learning-04-01：使用Druid作为SpringBoot项目数据源（添加监控）
