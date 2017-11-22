@@ -6,7 +6,7 @@
  Learning-02-01      | SpringBoot与JSP间不可描述的秘密      |    
  Learning-03-01      | SpringBoot使用SpringDataJPA完成CRUD      |     
  Learning-04-01      | 使用Druid作为SpringBoot项目数据源（添加监控）      |     
- Learning-05-01      | 配置使用FastJson返回Json视图      |     
+ Learning-05-01      | 配置使用FastJson返回Json视图、Json的序列化和反序列化      |     
  Learning-06-01      | 如何在SpringBoot项目中使用拦截器      |     
  Learning-07-01      | SpringBoot整合JavaMail发送邮件      |     
  Learning-08-01      | 如何排除SpringBoot内置SpringMvc静态文件地址      |     
