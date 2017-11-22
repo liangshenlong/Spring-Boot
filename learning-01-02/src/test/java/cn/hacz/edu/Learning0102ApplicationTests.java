@@ -1,5 +1,6 @@
 package cn.hacz.edu;
 
+import cn.hacz.edu.javaconfig.FunctionService;
 import cn.hacz.edu.javaconfig.UseFunctionService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
