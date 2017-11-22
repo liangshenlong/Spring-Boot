@@ -8,3 +8,9 @@ Learning-06-01：如何在SpringBoot项目中使用拦截器
 Learning-07-01：SpringBoot整合JavaMail发送邮件
 Learning-08-01：如何排除SpringBoot内置SpringMvc静态文件地址
 Learning-09-01：实现SpringBoot单个、多个文件的上传
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
