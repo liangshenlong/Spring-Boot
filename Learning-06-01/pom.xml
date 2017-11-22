@@ -9,7 +9,7 @@
 	<packaging>war</packaging>
 
 	<name>learning-06-01</name>
-	<description>Demo project for Spring Boot Filter</description>
+	<description>Demo project for Spring Boot filter</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
