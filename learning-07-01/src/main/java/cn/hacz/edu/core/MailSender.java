@@ -30,7 +30,7 @@ public class MailSender {
      * @param title 标题信息
      * @return
      */
-    
+
     public MailSender title(String title) {
         mail.setTitle(title);
         return this;
