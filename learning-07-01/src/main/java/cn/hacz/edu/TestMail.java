@@ -19,7 +19,7 @@ public class TestMail {
     public static void main(String[] args) throws Exception {
         new MailSender()
                 .title("测试SpringBoot发送邮件")
-                .content("")
+                .content("你好！")
                 .contentType(MailContentTypeEnum.TEXT)
                 .targets(new ArrayList<String>() {{
                     add("1007916121@qq.com");
