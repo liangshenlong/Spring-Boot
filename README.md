@@ -22,16 +22,23 @@
  Learning-15-01      | 程序监控（admin）      |  文档资料
  Learning-16-01      | 程序测试      |  文档资料
  
- ### 配置
+ ### 项目配置
  项目                | 描述           | 备注  
  ----|--------|----
  Learning-20-01      |SpringBoot配置文件application.properties参数详解| 简书资料
+ Learning-21-01      |如何获取SpringBoot项目的applicationContext对象| 简书资料
+ Learning-22-01      |修改SpringBoot启动[Banner](http://patorjk.com/software/taag)| 简书资料
+ Learning-23-01      |SpringBoot配置类WebMvcConfigurerAdapter| 简书资料
  
  
  ### ORM产品
- Learning-30-01      |Spring-data-Hibernate| 简书资料
- Learning-31-01      |Spring-data-Jpa| 简书资料
- Learning-32-01      |JdbcTemplate| 简书资料
- Learning-33-01      |Mybatis| 简书资料
- Learning-34-01      |Spring-Data-Redis| 简书资料
- Learning-35-01      |Spring-Data-Mongo| 简书资料
+ Learning-30-01      |使用SpringBoot validator让数据更真实| 简书资料
+ Learning-31-01      |SpringBoot实战SpringDataJPA| 简书资料
+ Learning-32-01      |使用Spring-data-Jpa| 简书资料
+ Learning-33-01      |使用JdbcTemplate| 简书资料
+ Learning-34-01      |使用Mybatis| 简书资料
+ Learning-35-01      |使用Redis作为SpringBoot项目数据缓存| 简书资料
+ Learning-36-01      |使用Spring-Data-Mongo| 简书资料
+ 
+ 
+ ### 
