@@ -7,6 +7,7 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.util.UriComponentsBuilder;
 
 
 /**
@@ -32,6 +33,17 @@ public class ClientRestController {
         UserEntity forObject = restTemplate.getForObject("http://localhost:8080/getFindOneUser/{id}", UserEntity.class, "1");
         return R.ok(forObject);
     }
+
+    @RequestMapping(value = "/contextLoads", produces = "application/json")
+    public void contextLoads() {
+        RestTemplate restTemplate = new RestTemplate();
+        String url = "http://localhost:8080/getFindOneUser";
+        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(url)
+                .queryParam("name", "guod");
+        R postForObject = restTemplate.getForObject(builder.build().encode().toUri(), R.class);
+    }
+
+
 
     /**
      * form表单参数
