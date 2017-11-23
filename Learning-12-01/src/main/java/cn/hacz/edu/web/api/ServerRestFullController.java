@@ -49,6 +49,17 @@ public class ServerRestFullController extends BaseController {
     }
 
     /**
+     * 如果添加@RequestBody，则出入参数必须使用实体对象
+     *
+     * @param userEntity
+     * @return
+     */
+    @PostMapping(value = "/addUserJson")
+    public R addUserJson(@RequestBody UserEntity userEntity) {
+        return R.ok(userDaoI.save(userEntity));
+    }
+
+    /**
      * 通过id查询单个用户
      *
      * @param id

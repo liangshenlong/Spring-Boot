@@ -1,28 +1,31 @@
 package cn.hacz.edu.web.api;
 
-import cn.hacz.edu.entity.UserEntity;
+import cn.hacz.edu.util.HttpClientUtil;
 import cn.hacz.edu.webexception.R;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * ========================
  * Created with IntelliJ IDEA.
  * User：guod
  * Date：2017/11/23
- * Time：9:43
+ * Time：11:55
  * Description：功能模块：
  * GitHub地址：https://github.com/s121528
  * ========================
  */
 @RestController
-public class ClientController {
-    @RequestMapping(value = "/javatest")
-    public R index() {
-        RestTemplate restTemplate = new RestTemplate();
-        UserEntity forObject = restTemplate.getForObject("http://localhost:8080/getFindOneUser/{id}", UserEntity.class, "1");
-        return R.ok(forObject);
+public class ClientHttpController {
+    @RequestMapping(value = "/clientHttpObj")
+    public R clientHttpObj() {
+        HttpClientUtil httpClientUtil = new HttpClientUtil();
+        Map<String, String> map = new HashMap<>();
+        String s = httpClientUtil.doGet("https://www.baidu.com");
+        return R.ok(s);
     }
+
 }
