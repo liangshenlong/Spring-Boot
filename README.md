@@ -21,3 +21,7 @@
  Learning-14-01      | 模板视图引擎      |  文档资料
  Learning-15-01      | 程序监控（admin）      |  文档资料
  Learning-16-01      | 程序测试      |  文档资料
+ 
+ ### 配置
+ ----|--------|----
+ Learning-20-01      |SpringBoot配置文件application.properties参数详解|
