@@ -26,3 +26,12 @@
  项目                | 描述           | 备注  
  ----|--------|----
  Learning-20-01      |SpringBoot配置文件application.properties参数详解| 简书资料
+ 
+ 
+ ### ORM产品
+ Learning-30-01      |Spring-data-Hibernate| 简书资料
+ Learning-31-01      |Spring-data-Jpa| 简书资料
+ Learning-32-01      |JdbcTemplate| 简书资料
+ Learning-33-01      |Mybatis| 简书资料
+ Learning-34-01      |Spring-Data-Redis| 简书资料
+ Learning-35-01      |Spring-Data-Mongo| 简书资料
