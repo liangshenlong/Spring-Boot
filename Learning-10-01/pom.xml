@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
 
     <name>learning-10-01</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Demo project for SpringBoot使用LogBack作为日志组件</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
