@@ -25,4 +25,4 @@
  ### 配置
  项目                | 描述           | 备注  
  ----|--------|----
- Learning-20-01      |SpringBoot配置文件application.properties参数详解|
+ Learning-20-01      |SpringBoot配置文件application.properties参数详解| 简书资料
