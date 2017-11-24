@@ -16,7 +16,10 @@
  Learning-10-01      | 日志管理（Log4j、Log4j2、Logback），SpringBoot使用LogBack作为日志组件      |   文档资料 
  Learning-10-02      | 日志管理（Log4j、Log4j2、Logback），SpringBoot添加Log4J2支持      |  文档资料
  Learning-11-01      | SpringBoot添加Java8的时间日期的Jackson2支持      |  文档资料
- Learning-12-01      | Httpclient、Okhttp、Httpurlconnection、RestTemplate常用的四种；Spring Cloud中如何优雅的使用Feign调用接口    |  文档资料
+ Learning-12-01      | Httpclient接口调用（Httpclient、Okhttp、Httpurlconnection、RestTemplate常用的四种；Spring Cloud中如何优雅的使用Feign调用接口）    |  文档资料
+ Learning-12-02      | Okhttp接口调用    |  文档资料
+ Learning-12-03      | Httpurlconnection接口调用    |  文档资料
+ Learning-12-04      | RestTemplate接口调用    |  文档资料
  Learning-13-01      | Swagger接口文档      |  文档资料
  Learning-14-01      | 模板视图引擎      |  文档资料
  Learning-15-01      | 程序监控（admin）      |  文档资料
