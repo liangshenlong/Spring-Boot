@@ -17,7 +17,7 @@ import java.util.Map;
  * @JDK:version used:jdk1.7
  * @Description 功能模块：其他DAO继承此类获取常用的数据库操作方法
  */
-public interface BasicsDaoI<T> {
+public interface BaseDaoI<T> {
 
     /**
      * @return Serializable
