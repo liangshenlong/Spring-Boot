@@ -1,4 +1,4 @@
-package cn.hacz.edu.learning3001;
+package cn.hacz.edu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
