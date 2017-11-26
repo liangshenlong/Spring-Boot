@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 public class IndexServiceImpl implements IndexServiceI {
     @Override
     public void indexServiceTest() {
-        
+
         System.out.println("测试service");
     }
 }
