@@ -1,14 +1,13 @@
 package cn.hacz.edu.dao;
 
-import java.io.Serializable;
-import java.math.BigInteger;
-import java.util.List;
-import java.util.Map;
-
 import cn.hacz.edu.webexception.BaseEntity;
 import cn.hacz.edu.webexception.PageHelper;
 import org.hibernate.Session;
 
+import java.io.Serializable;
+import java.math.BigInteger;
+import java.util.List;
+import java.util.Map;
 
 
 public interface BaseRepository<T extends BaseEntity> {
