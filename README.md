@@ -40,8 +40,8 @@
  Learning-30-01      |使用SpringBoot validator让数据更真实| 简书资料
  Learning-31-01      |SpringBoot实战hibernate+basedaoI不使用泛型| 简书资料
  Learning-31-02      |SpringBoot实战hibernate+basedaoI用泛型| 简书资料
- Learning-31-03      |SpringBoot实战JPA转换成hibernate| 简书资料
  Learning-32-01      |使用Spring-data-Jpa| 简书资料
+ Learning-32-02      |SpringBoot实战JPA转换成hibernate| 简书资料
  Learning-33-01      |使用JdbcTemplate| 简书资料
  Learning-34-01      |使用Mybatis| 简书资料
  Learning-35-01      |使用Redis作为SpringBoot项目数据缓存| 简书资料
