@@ -1,97 +1,65 @@
 package cn.hacz.edu.webexception;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import java.time.LocalDateTime;
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import org.hibernate.annotations.Type;
 
-import javax.persistence.*;
-import java.io.Serializable;
-import java.time.LocalDateTime;
-
 /**
- * ========================
- * Created with IntelliJ IDEA.
- * User：guod
- * Date：2017/11/23
- * Time：9:33
- * Description：功能模块：
- * GitHub地址：https://github.com/s121528
- * ========================
+ * 继承类
+ * 
+ * @author kevin
+ * @date 2016-09-26 12:05:26
  */
 @MappedSuperclass
-@JsonIgnoreProperties(value = {"handler", "hibernateLazyInitializer"})
-public class BaseEntity implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+public class BaseEntity {
 
-    private LocalDateTime createDateTime;
+	@Id
+	@Column(name = "ID", unique = true, nullable = false, length = 36)
+	private String id;// ID
 
-    private LocalDateTime modifyDateTime;
+	@Column(name = "CREATEDATETIME")
+	private LocalDateTime createDateTime;// 创建时间
 
-    @Type(type = "true_false")
-    private Boolean deleted;
+	@Column(name = "MODIFYDATETIME")
+	private LocalDateTime modifyDateTime;// 修改时间
 
-    @Type(type = "true_false")
-    private Boolean success;//
+	@Type(type = "true_false")
+	@Column(name = "DELETED")
+	private Boolean deleted;// 是否删除
 
-    @Column(length = 200)
-    private String info;
+	public Boolean getDeleted() {
+		return deleted;
+	}
 
-    public Integer getId() {
-        return id;
-    }
+	public void setDeleted(Boolean deleted) {
+		this.deleted = deleted;
+	}
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+	public String getId() {
+		return id;
+	}
 
-    public LocalDateTime getCreateDateTime() {
-        return createDateTime;
-    }
+	public void setId(String id) {
+		this.id = id;
+	}
 
-    public void setCreateDateTime(LocalDateTime createDateTime) {
-        this.createDateTime = createDateTime;
-    }
+	public LocalDateTime getCreateDateTime() {
+		return createDateTime;
+	}
 
-    public LocalDateTime getModifyDateTime() {
-        return modifyDateTime;
-    }
+	public void setCreateDateTime(LocalDateTime createDateTime) {
+		this.createDateTime = createDateTime;
+	}
 
-    public void setModifyDateTime(LocalDateTime modifyDateTime) {
-        this.modifyDateTime = modifyDateTime;
-    }
+	public LocalDateTime getModifyDateTime() {
+		return modifyDateTime;
+	}
 
-    public Boolean getDeleted() {
-        return deleted;
-    }
+	public void setModifyDateTime(LocalDateTime modifyDateTime) {
+		this.modifyDateTime = modifyDateTime;
+	}
 
-    public void setDeleted(Boolean deleted) {
-        this.deleted = deleted;
-    }
 
-    public Boolean getSuccess() {
-        return success;
-    }
-
-    public void setSuccess(Boolean success) {
-        this.success = success;
-    }
-
-    public String getInfo() {
-        return info;
-    }
-
-    public void setInfo(String info) {
-        this.info = info;
-    }
-
-    public LocalDateTime getReceiveTime() {
-        return receiveTime;
-    }
-
-    public void setReceiveTime(LocalDateTime receiveTime) {
-        this.receiveTime = receiveTime;
-    }
-
-    private LocalDateTime receiveTime;
 }

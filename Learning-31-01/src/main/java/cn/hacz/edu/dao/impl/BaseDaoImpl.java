@@ -5,9 +5,9 @@ import cn.hacz.edu.webexception.BaseEntity;
 import cn.hacz.edu.webexception.PageHelper;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import javax.annotation.Resource;
 import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.List;
@@ -15,7 +15,7 @@ import java.util.Map;
 
 @Repository
 public class BaseDaoImpl implements BaseDao {
-    @Resource
+    @Autowired
     private SessionFactory sessionFactory;
 
     @Override
@@ -25,7 +25,7 @@ public class BaseDaoImpl implements BaseDao {
 
     @Override
     public void saveOrUpdate(BaseEntity o) {
-
+        getCurrentSession().saveOrUpdate(o);
     }
 
     @Override
