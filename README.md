@@ -2,7 +2,7 @@
  项目                | 描述           | 备注  
  ----|------|----
  [Learning-01-01](https://github.com/s121528/Spring-Boot/tree/master/Learning-01-01)      | 用一个HelloWord来阐述SpringBoot的简单与快速 | 简书资料 
- Learning-01-02      | Java配置、依赖注入（IOC、DI）、切面（AOP）、EL |  简书资料
+ [Learning-01-02](https://github.com/s121528/Spring-Boot/tree/master/Learning-01-02)      | Java配置、依赖注入（IOC、DI）、切面（AOP）、EL |  简书资料
  Learning-01-03      | SpringBoot的属性注入 |  简书资料
  Learning-02-01      | SpringBoot与JSP间不可描述的秘密      |    简书资料
  Learning-03-01      | SpringBoot使用SpringDataJPA完成CRUD      |     简书资料
