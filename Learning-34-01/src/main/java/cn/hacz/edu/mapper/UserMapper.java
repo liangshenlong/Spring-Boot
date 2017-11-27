@@ -3,6 +3,8 @@ package cn.hacz.edu.mapper;
 
 import cn.hacz.edu.model.User;
 
+import java.util.List;
+
 public interface UserMapper {
     int deleteByPrimaryKey(Integer userId);
 
@@ -15,4 +17,7 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+
+    //这个方式我自己加的
+    List<User> selectAllUser();
 }
