@@ -52,5 +52,6 @@
  ### 权限管理与安全验证
  项目                | 描述           | 备注  
    ----|--------|----
-  Learning-40-01      |菜单树| 简书资料
-  Learning-40-01      |使用SpringSecurity让SpringBoot项目更安全| 简书资料
+  Learning-40-01      |使用SpringSecurity让SpringBoot项目更安全+菜单树| 简书资料
+  Learning-40-02      |使用SpringSecurity让SpringBoot项目更安全+登录实现| 简书资料
+  Learning-40-03      |SpringBoot项目中使用SpringSecurity整合OAuth2设计项目API安全接口服务| 简书资料
