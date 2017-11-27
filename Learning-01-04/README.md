@@ -18,7 +18,6 @@ public class AppConfig{
     }
 }
 对于上面的@Beans配置文件相同的XML配置文件如下：
-
 <beans>
     <bean id="myService" class="com.howtodoinjava.services.MyServiceImpl"/>
 </beans>
