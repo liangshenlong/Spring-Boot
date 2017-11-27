@@ -9,3 +9,17 @@
 + 基于 XML 的配置文件
 + 基于注解的配置
 + 基于 Java 的配置
+```
+@Configuration
+public class AppConfig{
+    @Bean
+    public MyService myService() {
+        return new MyServiceImpl();
+    }
+}
+对于上面的@Beans配置文件相同的XML配置文件如下：
+
+<beans>
+    <bean id="myService" class="com.howtodoinjava.services.MyServiceImpl"/>
+</beans>
+```
