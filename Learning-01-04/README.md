@@ -1,25 +1,11 @@
 ### 主要知识点（spring Boot提倡约定优于配置）
-> Java配置、依赖注入（IOC、DI）、切面（AOP）、EL
+> Spring——Bean
 
-```
-@Configuration
-public class AppConfig {
+##### Bean的定义
++ 被称作 bean 的对象是构成应用程序的支柱也是由 Spring IoC 容器管理的。bean 是一个被实例化，组装，并通过 Spring IoC 容器所管理的对象。这些 bean 是由用容器提供的配置元数据创建的，例如，在 XML 的表单中的 定义。
++ bean 定义包含称为配置元数据的信息，下述容器也需要知道配置元数据：如何创建一个 bean、bean 的生命周期的详细信息、bean 的依赖关系。
 
-    @Bean
-    public MyService myService() {
-        return new MyServiceImpl();
-    }
-
-}
-等价下面的代码：
-<beans>
-    <bean id="myService" class="com.acme.services.MyServiceImpl"/>
-</beans>
-```
-##### @Configuration
-+ @Configuration注解的类，等价 与XML中配置beans
-
-##### @Bean
-+ @Bean标注方法等价于XML中配置的bean
-+ @Bean只能用于注解方法和注解的定义。
-+ 注解的方法：会实例化、配置并初始化一个新的对象，这个对象会由spring IoC 容器管理。
+##### Spring 配置元数据
++ 基于 XML 的配置文件
++ 基于注解的配置
++ 基于 Java 的配置
