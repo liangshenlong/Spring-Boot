@@ -24,7 +24,7 @@
  Learning-14-01      | 模板视图引擎      |  简书资料
  Learning-15-01      | 程序监控（admin）      |  简书资料
  Learning-16-01      | 程序测试      |  简书资料
- Learning-17-01      | 优雅的代码简化      |  简书资料
+ Learning-17-01      | SpringBoot使用Lombok来优雅的编码      |  简书资料
  
  ### 项目配置
  项目                | 描述           | 备注  
