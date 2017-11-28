@@ -50,22 +50,21 @@
  Learning-36-01      |SpringBoot实战Spring-Data-Mongo| 简书资料
  
  
-  ### ORM产品
+  ### 权限管理与安全验证
   项目                | 描述           | 备注  
    ----|--------|----
   Learning-40-01      |使用SpringSecurity让SpringBoot项目更安全+菜单树| 简书资料
   Learning-40-02      |使用SpringSecurity让SpringBoot项目更安全+登录实现| 简书资料
   Learning-40-03      |SpringBoot项目中使用SpringSecurity整合OAuth2设计项目API安全接口服务| 简书资料
   
-  ### ORM产品
+  ### 代码生成器
   项目                | 描述           | 备注  
    ----|--------|----
-  Learning-40-01      |使用SpringSecurity让SpringBoot项目更安全+菜单树| 简书资料
   Learning-50-01      |Velocity 模板引擎介绍| 简书资料
  
- ### 权限管理与安全验证
+  
+  ### 微服务
   项目                | 描述           | 备注  
-    ----|--------|----
- Learning-50-01      |Velocity 模板引擎介绍| 简书资料
+   ----|--------|----
  Learning-60-01      |运行 springboot-dubbo-server Dubbo 服务提供者工程| 简书资料      
  Learning-60-02      |运行 springboot-dubbo-client Dubbo 服务消费者工程| 简书资料      
