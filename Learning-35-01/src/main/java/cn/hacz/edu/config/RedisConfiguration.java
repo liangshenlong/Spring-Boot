@@ -1,5 +1,6 @@
 package cn.hacz.edu.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.cache.annotation.EnableCaching;
@@ -11,6 +12,8 @@ import org.springframework.data.redis.cache.RedisCacheManager;
 import java.lang.reflect.Method;
 
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
  * ========================
@@ -25,6 +28,8 @@ import org.springframework.data.redis.core.RedisTemplate;
 @Configuration
 @EnableCaching
 public class RedisConfiguration extends CachingConfigurerSupport {
+    @Autowired
+    private RedisTemplate redisTemplate;
     /**
      * 自定义生成key的规则
      *
@@ -60,5 +65,14 @@ public class RedisConfiguration extends CachingConfigurerSupport {
     @Bean
     public CacheManager cacheManager(RedisTemplate redisTemplate) {
         return new RedisCacheManager(redisTemplate);
+    }
+
+    @Bean
+    public RedisTemplate redisTemplateInit() {
+        //设置序列化Key的实例化对象
+        redisTemplate.setKeySerializer(new StringRedisSerializer());
+        //设置序列化Value的实例化对象
+        redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
+        return redisTemplate;
     }
 }
