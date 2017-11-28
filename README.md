@@ -58,9 +58,10 @@
   Learning-40-03      |SpringBoot项目中使用SpringSecurity整合OAuth2设计项目API安全接口服务| 简书资料
   
   ### 代码生成器generator
-  项目                | 描述           | 备注  
-     ----|--------|----
- Learning-50-01      |Velocity 模板引擎介绍| 简书资料
+ 项目                | 描述           | 备注  
+    ----|--------|----
+  Learning-40-01      |使用SpringSecurity让SpringBoot项目更安全+菜单树| 简书资料
+  Learning-50-01      |Velocity 模板引擎介绍| 简书资料
  
  ### 微服务
      项目                | 描述           | 备注  
