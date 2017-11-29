@@ -79,10 +79,10 @@
   ### 模块
   项目                | 描述           | 备注  
    ----|--------|----
- Learning-60-01      |SpringBoot项目多模块运用与设计| 简书资料      
- Learning-60-02      |SpringBoot项目多模块打包与部署| 简书资料      
+ Learning-70-01      |SpringBoot项目多模块运用与设计| 简书资料      
+ Learning-70-02      |SpringBoot项目多模块打包与部署| 简书资料      
  
   ### WebSocker
   项目                | 描述           | 备注  
-    ----|--------|----
+   ----|--------|----
  Learning-80-01      |SpringBoot项目中使用WebSocker配置广播式通信| 简书资料      
