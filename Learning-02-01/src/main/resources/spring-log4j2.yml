@@ -25,5 +25,5 @@ Configuration:
     logger:
     - name: org.springframework
       level: INFO
-    - name: com.asb.etc.ygz
+    - name: cn.hacz.edu
       level: INFO
