@@ -52,6 +52,7 @@
  Learning-34-01      |SpringBoot实战Mybatis| 简书资料
  Learning-35-01      |SpringBoot实战Redis作为SpringBoot项目数据缓存| 简书资料
  Learning-36-01      |SpringBoot实战Spring-Data-Mongo| 简书资料
+ Learning-37-01      |SpringBoot实战多数据源的配置| 简书资料
  
  
   ### 权限管理与安全验证
@@ -60,6 +61,8 @@
   Learning-40-01      |使用SpringSecurity让SpringBoot项目更安全+菜单树| 简书资料
   Learning-40-02      |使用SpringSecurity让SpringBoot项目更安全+登录实现| 简书资料
   Learning-40-03      |SpringBoot项目中使用SpringSecurity整合OAuth2设计项目API安全接口服务| 简书资料
+  Learning-40-04      |使用jwt设计SpringBoot项目api接口安全服务| 简书资料
+  Learning-41-04      |shiro权限管理设计| 简书资料
   
   ### 代码生成器
   项目                | 描述           | 备注  
@@ -72,3 +75,16 @@
    ----|--------|----
  Learning-60-01      |运行 springboot-dubbo-server Dubbo 服务提供者工程| 简书资料      
  Learning-60-02      |运行 springboot-dubbo-client Dubbo 服务消费者工程| 简书资料      
+ 
+ 
+   ### 模块
+   项目                | 描述           | 备注  
+    ----|--------|----
+ Learning-70-01      |SpringBoot项目多模块运用与设计| 简书资料      
+ Learning-70-02      |SpringBoot项目多模块打包与部署| 简书资料      
+
+
+   ### WebSocker
+   项目                | 描述           | 备注  
+    ----|--------|----
+ Learning-80-01      |SpringBoot项目中使用WebSocker配置广播式通信| 简书资料      
