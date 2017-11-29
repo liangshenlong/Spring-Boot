@@ -15,6 +15,5 @@ public class ClassMain03 {
     public static void main(String[] args) throws Exception {
         Class<?> s = Class.forName("cn.hacz.edu.entity.Student");
         System.out.println(s.getPackage().getName());
-
     }
 }
