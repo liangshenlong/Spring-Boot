@@ -5,7 +5,7 @@
  [Learning-01-02](https://github.com/s121528/Spring-Boot/tree/master/Learning-01-02)      | Java配置（@Configuration和@Bean）、依赖注入（IOC、DI）、切面（AOP）、EL |  简书资料
  Learning-01-03      | SpringBoot的属性注入 |  简书资料
  Learning-01-04      | Spring——Bean 配置元数据 |  简书资料
- Learning-02-01      | SpringBoot与JSP间不可描述的秘密      |    简书资料
+ Learning-02-01      | 异常统一处理      |    简书资料
  Learning-03-01      | SpringBoot使用SpringDataJPA完成CRUD      |     简书资料
  Learning-04-01      | Druid、HikariCP连接池使用+Druid作为SpringBoot项目数据源（添加监控）      |     简书资料
  Learning-04-02      | Druid、HikariCP连接池使用+HikariCP连接池使用      |     简书资料
@@ -22,7 +22,9 @@
  Learning-12-03      | Httpurlconnection接口调用    |  简书资料
  Learning-12-04      | RestTemplate接口调用    |  简书资料
  Learning-13-01      | Swagger接口文档      |  简书资料
- Learning-14-01      | 模板视图引擎      |  简书资料
+ Learning-14-01      | 模板视图引擎WEB应用开发-模板引擎FreeMarker      |  简书资料
+ Learning-14-02      | 模板视图引擎WEB应用开发-模板引擎Thymeleaf      |  简书资料
+ Learning-14-03      | 模板视图引擎WEB应用开发-模板引擎JSP      |  简书资料
  Learning-15-01      | 程序监控（admin）      |  简书资料
  Learning-16-01      | 程序测试      |  简书资料
  Learning-17-01      | SpringBoot使用Lombok来优雅的编码      |  简书资料
