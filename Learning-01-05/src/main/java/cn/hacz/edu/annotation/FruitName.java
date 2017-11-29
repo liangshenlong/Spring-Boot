@@ -18,7 +18,6 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 //指定验证器
-@Constraint(validatedBy = FruitInfoUtil.class)
 public @interface FruitName {
     String value() default "";
 }
