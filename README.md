@@ -31,6 +31,7 @@
  项目                | 描述           | 备注  
  ----|--------|----
  Learning-20-01      |SpringBoot配置文件application.properties参数详解| 简书资料
+ Learning-20-02      |SpringBoot配置文件application.yml参数详解| 简书资料
  Learning-21-01      |如何获取SpringBoot项目的applicationContext对象| 简书资料
  Learning-22-01      |修改SpringBoot启动[Banner](http://patorjk.com/software/taag)| 简书资料
  Learning-23-01      |SpringBoot配置类WebMvcConfigurerAdapter| 简书资料
