@@ -1,4 +1,4 @@
-package cn.hacz.edu;
+package cn.hacz.edu.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
