@@ -1,0 +1,14 @@
+server:
+  port: 7105
+spring:
+  datasource:
+    url: jdbc:mysql:///test
+    username: root
+    password: 123654
+crm:
+   uploadPath: E://
+   jiayingguan: etcext_yhb  
+   
+interfacemethod:
+    querybankinfo: http://10.248.8.12:8889/cpubind/get  
+   
