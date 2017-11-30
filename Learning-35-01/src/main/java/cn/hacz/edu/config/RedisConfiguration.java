@@ -30,6 +30,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 public class RedisConfiguration extends CachingConfigurerSupport {
     @Autowired
     private RedisTemplate redisTemplate;
+
     /**
      * 自定义生成key的规则
      *
