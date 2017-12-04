@@ -2,6 +2,7 @@ package cn.hacz.edu.config;
 
 import cn.hacz.edu.controller.UserFunctionController;
 import cn.hacz.edu.service.FunctionService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
