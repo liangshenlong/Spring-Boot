@@ -4,6 +4,7 @@ import cn.hacz.edu.mapper.UserMapper;
 import cn.hacz.edu.model.User;
 import cn.hacz.edu.service.UserServiceI;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -18,6 +19,7 @@ import java.util.List;
  * GitHub地址：https://github.com/s121528
  * ========================
  */
+@Service
 public class UserServiceImpl implements UserServiceI {
     @Autowired
     private UserMapper userMapper;
