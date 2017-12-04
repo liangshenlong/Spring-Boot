@@ -1,4 +1,4 @@
-package cn.hacz.edu.model.impl;
+package cn.hacz.edu.service.impl;
 
 import cn.hacz.edu.mapper.UserMapper;
 import cn.hacz.edu.model.User;
