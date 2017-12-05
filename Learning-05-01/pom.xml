@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
 
     <name>learning-03-01</name>
-    <description>Demo project for Spring Boot JPA</description>
+    <description>Demo project for Spring Boot fastjson的使用</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -80,6 +80,10 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.31</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
 
