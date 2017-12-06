@@ -47,8 +47,8 @@ public class Jackson02Test {
         bookVo.setName("第一章");
         VolumeVo volumeVo = new VolumeVo();
         bookVo.getVolume().add(volumeVo);
-        ObjectWriter o = new XmlMapper().writerWithDefaultPrettyPrinter();
-        String s = o.writeValueAsString(bookVo);
+        ObjectWriter objectWriter = new XmlMapper().writerWithDefaultPrettyPrinter();
+        String s = objectWriter.writeValueAsString(bookVo);
         System.out.println(s);
     }
 
