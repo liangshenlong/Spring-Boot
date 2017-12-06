@@ -1,5 +1,7 @@
 package cn.hacz.edu.entity;
 
+import javax.persistence.*;
+
 /**
  * ========================
  * Created with IntelliJ IDEA.
@@ -13,7 +15,7 @@ package cn.hacz.edu.entity;
  */
 public class Student {
     private String name;
-    private int age;
+    private Integer age;
     private String add;
 
     public Student() {
@@ -33,11 +35,11 @@ public class Student {
         this.name = name;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
