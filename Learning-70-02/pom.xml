@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>mvn-entity</module>
+        <module>mvn-controller</module>
     </modules>
 
 
