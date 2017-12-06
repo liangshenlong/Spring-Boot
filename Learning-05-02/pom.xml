@@ -39,6 +39,18 @@
             <artifactId>jackson-dataformat-xml</artifactId>
             <version>2.8.10</version>
         </dependency>
+        <!-- 兼容2003 -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.17</version>
+        </dependency>
+        <!-- 兼容2007 -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.17</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
