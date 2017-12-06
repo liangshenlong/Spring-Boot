@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<!-- 最基本的提交方式 -->
+<div id="type_01">
+    <form action="login" method="post">
+        <p>
+            用户名: <input type="text" name="user"/>
+        </p>
+        <p>
+            密码: <input type="password" name="password"/>
+        </p>
+        <input type="submit" value="提交方式一"/>
+    </form>
+</div>
+<hr>
+<div>
+    <form action="login" method="post" id="myForm">
+        <p>
+            用户名: <input type="text" name="user"/>
+        </p>
+        <p>
+            密码: <input type="password" name="password"/>
+        </p>
+        <input id="sub01" type="button" value="提交方式二"/>
+    </form>
+</div>
+<hr>
+<div>
+    <form action="login" method="post" id="myForm02">
+        <p>
+            用户名: <input type="text" name="user"/>
+        </p>
+        <p>
+            密码: <input type="password" name="password"/>
+        </p>
+        <input id="sub02" type="button" value="提交方式三"/>
+    </form>
+</div>
+<hr>
+<div>
+    <a href="javascript:doSubmit();">提交方式四</a>
+</div>
+<div>
+    <form id="hello">
+        <input id="tijiao" type="button" value="提交方式五">
+    </form>
+</div>
+<script>
+    $('#sub01').click(function () {
+        $('#myForm').submit();
+    });
+
+    $("#sub02").click(function () {
+        var form = new FormData(document.getElementById("myForm02"));
+        alert(form);
+        $.ajax({
+            url: "login",
+            type: "POST",
+            processData: false,
+            contentType: false,
+            data: form,
+            dataType: "JSON",
+            success: function (result) {
+                alert(result.user);
+            }
+        });
+    });
+
+    var ct = 0;
+    for (var i = 0; i < 10; i++) {
+        var str = '<input name="users[' + ct + '].username" value="name' + ct + '">';
+        var str1 = '<input name="users[' + ct + '].password" value="password' + ct + '">';
+        ct++;
+        $('#hello').append(str).append(str1).append('<br>');
+    }
+    $('#tijiao').click(function () {
+        $.post('/addUsers', $('#hello').serialize(), function (data) {
+            console.info(data);
+        }, 'json');
+    });
+
+    function doSubmit() {
+        var form = $("<form method='post' action='login'></form>");
+        var input01 = $("<input>").attr('type', 'hidden').attr('name', 'user').val("18838177689");
+        var input02 = $("<input>").attr('type', 'hidden').attr('name', 'password').val("12346");
+        form.append(input01);
+        form.append(input02);
+        $(document.body).append(form);
+        form.submit();
+    }
+
+</script>
+</body>
+</html>
