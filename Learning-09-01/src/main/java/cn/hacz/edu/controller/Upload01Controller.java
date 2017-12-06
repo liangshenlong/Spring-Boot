@@ -1,10 +1,13 @@
 package cn.hacz.edu.controller;
 
+import cn.hacz.edu.webexception.R;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
@@ -12,15 +15,18 @@ import java.util.UUID;
 
 /**
  * ========================
- * Created with IntelliJ IDEA.
- * User：恒宇少年
- * Date：2017/4/12
- * Time：21:47
- * 码云：http://git.oschina.net/jnyqy
+ * project -
+ *
+ * @author guod
+ * @version 3.0
+ * @date 日期:2017/12/6 时间:10:15
+ * @JDK: v1.8
+ * @Description 功能模块：
+ * GitHub地址：https://github.com/s121528
  * ========================
  */
 @Controller
-public class UploadController {
+public class Upload01Controller {
 
     /**
      * 初始化上传文件界面，跳转到index.jsp
