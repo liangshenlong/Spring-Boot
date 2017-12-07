@@ -24,6 +24,14 @@ public class UserEntity {
     private Set<SkillEntity> skills = new HashSet<>();
     private Map<String, String> properties = new HashMap<>();
 
+    public UserEntity() {
+    }
+
+    public UserEntity(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
+
     public String getName() {
         return name;
     }

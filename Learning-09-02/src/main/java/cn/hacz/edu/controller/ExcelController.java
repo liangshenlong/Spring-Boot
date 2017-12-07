@@ -38,7 +38,7 @@ public class ExcelController {
     private UserServiceI userServiceI;
 
     @RequestMapping(value = "/writeExcel01")
-    public R writeExcel01(MultipartFile file) {
+    public R writeExcel01(MultipartFile file,HttpServletRequest request) {
         Map<String, Object> param = new HashMap<>(16);
         List<UserEntity> allUsers = new ArrayList<>();
         try {
@@ -54,6 +54,7 @@ public class ExcelController {
             e.printStackTrace();
         }
         param.put("allUsers", allUsers);
+        userServiceI.insertUsers(param);
         return R.ok(allUsers);
     }
 }
