@@ -41,7 +41,8 @@ public class TokenUtils {
      */
     public String generateToken(TokenDetail tokenDetail) {
         Map<String, Object> claims = new HashMap<String, Object>();
-        // 增加了两个内容，一个是用户名，一个是创建时间（验证token的有效性）；因为格式是HashMap，所以有key 和 value
+        // 增加了两个内容，一个是用户名，一个是创建时间（验证token的有效性）；
+        // 因为格式是HashMap，所以有key 和 value
         claims.put("sub", tokenDetail.getUsername());
         claims.put("created", this.generateCurrentDate());
         return this.generateToken(claims);

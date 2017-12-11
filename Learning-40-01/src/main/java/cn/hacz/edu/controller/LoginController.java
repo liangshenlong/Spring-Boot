@@ -4,6 +4,7 @@ import cn.hacz.edu.model.LoginDetail;
 import cn.hacz.edu.model.vo.RequestLoginUser;
 import cn.hacz.edu.service.LoginService;
 import cn.hacz.edu.util.token.TokenDetail;
+import cn.hacz.edu.webexception.BaseController;
 import cn.hacz.edu.webexception.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,7 +22,7 @@ import javax.validation.Valid;
  * @Date 2017/10/3 1:30
  */
 @RestController
-public class LoginController {
+public class LoginController extends BaseController {
 
     private final LoginService loginService;
 
@@ -37,6 +38,7 @@ public class LoginController {
     public R login(@Valid RequestLoginUser requestLoginUser, BindingResult bindingResult) {
         // 检查有没有输入用户名密码和格式对不对
         if (bindingResult.hasErrors()) {
+            logger.error("数据校验有误！");
             return R.error("400", "缺少参数或者参数格式不对");
         }
 

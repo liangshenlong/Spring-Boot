@@ -50,21 +50,29 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/auth").authenticated()       // 需携带有效 token
-                .antMatchers("/admin").hasAuthority("admin")   // 需拥有 admin 这个权限
-                .antMatchers("/ADMIN").hasRole("ADMIN")     // 需拥有 ADMIN 这个身份
+                .antMatchers("/auth").authenticated()
+                // 需携带有效 token
+                .antMatchers("/admin").hasAuthority("admin")
+                // 需拥有 admin 这个权限
+                .antMatchers("/ADMIN").hasRole("ADMIN")
+                // 需拥有 ADMIN 这个身份
                 .anyRequest().permitAll()       // 允许所有请求通过
                 .and()
                 // 配置被拦截时的处理
                 .exceptionHandling()
-                .authenticationEntryPoint(this.unauthorizedHandler)   // 添加 token 无效或者没有携带 token 时的处理
-                .accessDeniedHandler(this.accessDeniedHandler)      //添加无权限时的处理
+                .authenticationEntryPoint(this.unauthorizedHandler)
+                // 添加 token 无效或者没有携带 token 时的处理
+                .accessDeniedHandler(this.accessDeniedHandler)
+                //添加无权限时的处理
                 .and()
                 // 下面这里是禁用掉 spring security 的跨域处理，这个框架的跨域处理是在直接耦合前端的 html ，jsp 时用的，使用跨域处理的例子可以参考《Spring 实战》
                 .csrf()
-                .disable()                      // 禁用 Spring Security 自带的跨域处理
-                .sessionManagement()                        // 定制我们自己的 session 策略
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS); // 调整为让 Spring Security 不创建和使用 session
+                .disable()
+                // 禁用 Spring Security 自带的跨域处理
+                .sessionManagement()
+                // 定制我们自己的 session 策略
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+                 // 调整为让 Spring Security 不创建和使用 session
 
 
         /**
