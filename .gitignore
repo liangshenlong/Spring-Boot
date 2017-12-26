@@ -135,3 +135,4 @@ Icon
 ## hack for graddle wrapper
 !wrapper/*.jar
 !**/wrapper/*.jar
+Learning-01-01/src/main/java/cn/hacz/edu/controller/HelloController.java
