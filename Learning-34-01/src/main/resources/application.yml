@@ -4,7 +4,7 @@ server:
 spring:
     datasource:
         name: test
-        url: jdbc:mysql://39.106.44.170:3307/mybatis?useOldAliasMetadataBehavior=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+        url: jdbc:mysql://xx.xx.xx.xx:3307/mybatis?useOldAliasMetadataBehavior=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
         username: root
         password: 123456
         # 使用druid数据源
