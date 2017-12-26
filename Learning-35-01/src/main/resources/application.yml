@@ -35,7 +35,7 @@ spring:
       ddl-auto: create
   #配置redis数据库连接
   redis:
-    host: 39.106.44.170
+    host: xx.xx.xx.xx
     port: 6379
     pool:
       max-idle: 20
