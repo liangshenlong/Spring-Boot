@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.hacz.edu</groupId>
-    <artifactId>learning-09-01</artifactId>
+    <artifactId>learning-90-01</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>rabbitmq-common</module>
@@ -13,7 +13,7 @@
     </modules>
     <packaging>pom</packaging>
 
-    <name>learning-09-01</name>
+    <name>learning-90-01</name>
     <description>Demo project for Spring Boot KafKa、RabbitMQ、ActiveMQ异步消息服务</description>
 
     <parent>
