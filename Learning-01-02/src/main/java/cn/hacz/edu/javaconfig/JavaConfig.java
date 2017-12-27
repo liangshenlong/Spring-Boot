@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class JavaConfig {
     /**
-     * 功能： 通过该注解来表明是一个Bean对象，相当于xml中的<bean>，bean名称是方法名称
+     * 功能： 实例化 功能类，通过该注解来表明是一个Bean对象，相当于xml中的<bean>，bean名称是方法名称
      *
      * @return
      */
@@ -23,6 +23,11 @@ public class JavaConfig {
         return new FunctionService();
     }
 
+    /**
+     * 实例化 使用功能类的类
+     *
+     * @return
+     */
     @Bean(name = "useFunctionService")
     public UseFunctionService useFunctionService() {
         UseFunctionService useFunctionService = new UseFunctionService();
