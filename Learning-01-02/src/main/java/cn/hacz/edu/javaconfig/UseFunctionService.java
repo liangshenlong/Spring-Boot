@@ -1,8 +1,11 @@
 package cn.hacz.edu.javaconfig;
 
-//1
+/**
+ * 功能：使用功能类的bean
+ *
+ * @author guod
+ */
 public class UseFunctionService {
-    //2
     FunctionService functionService;
 
     public void setFunctionService(FunctionService functionService) {
