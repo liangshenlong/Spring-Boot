@@ -6,7 +6,12 @@
     <groupId>cn.hacz.edu</groupId>
     <artifactId>learning-09-01</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>rabbitmq-common</module>
+        <module>rabbitmq-consumer</module>
+        <module>rabbitmq-provider</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <name>learning-09-01</name>
     <description>Demo project for Spring Boot KafKa、RabbitMQ、ActiveMQ异步消息服务</description>
@@ -54,15 +59,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
 
 </project>
