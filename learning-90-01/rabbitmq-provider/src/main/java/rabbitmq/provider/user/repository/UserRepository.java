@@ -15,6 +15,5 @@ import rabbitmq.provider.user.entity.UserEntity;
  * 码云：http://git.oschina.net/jnyqy
  * ========================
  */
-public interface UserRepository
-        extends JpaRepository<UserEntity, Long> {
+public interface UserRepository extends JpaRepository<UserEntity, Long> {
 }
