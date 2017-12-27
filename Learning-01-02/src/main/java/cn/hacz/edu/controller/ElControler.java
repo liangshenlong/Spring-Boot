@@ -46,7 +46,7 @@ public class ElControler {
     /**
      * 5
      */
-    @Value("#{demoService.another}")
+    @Value("#{guoService.another}")
     private String fromAnother;
     /**
      * 6
