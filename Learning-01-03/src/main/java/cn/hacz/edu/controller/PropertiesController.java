@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * ========================
  * Created with IntelliJ IDEA.
- * User：guod
+ * @author guod
  * Date：2017/11/29
  * Time：9:11
  * Description：功能模块：
