@@ -14,7 +14,8 @@ import java.io.IOException;
 /**
  * ========================
  * Created with IntelliJ IDEA.
- * User：guod
+ *
+ * @author guod
  * Date：2017/11/23
  * GitHub地址：https://github.com/s121528
  * ========================
@@ -22,29 +23,46 @@ import java.io.IOException;
 @RestController
 @PropertySource("classpath:test.properties")
 public class ElControler {
-    @Value("I Love You!") // 1
+    /**
+     * 1
+     */
+    @Value("I Love You!")
     private String normal;
-
-    @Value("#{systemProperties['os.name']}") // 2
+    /**
+     * 2
+     */
+    @Value("#{systemProperties['os.name']}")
     private String osName;
-
-    @Value("#{ T(java.lang.Math).random() * 100.0 }") // 3
+    /**
+     * 3
+     */
+    @Value("#{ T(java.lang.Math).random() * 100.0 }")
     private double randomNumber;
-
-    @Value("http://www.baidu.com") // 4
+    /**
+     * 4
+     */
+    @Value("http://www.baidu.com")
     private Resource testUrl;
-
-    @Value("#{demoService.another}") // 5
+    /**
+     * 5
+     */
+    @Value("#{demoService.another}")
     private String fromAnother;
-
-    @Value("classpath:test.txt") // 6
+    /**
+     * 6
+     */
+    @Value("classpath:test.txt")
     private Resource testFile;
-
-    @Value("${book.name}") // 7注意需要引入properties的配置文件
+    /**
+     * 7注意需要引入properties的配置文件
+     */
+    @Value("${book.name}")
     private String bookName;
-
+    /**
+     * 7
+     */
     @Autowired
-    private Environment environment; //7
+    private Environment environment;
 
     @GetMapping(value = "/elIndex")
     public String elIndex() throws IOException {
