@@ -3,7 +3,6 @@ package cn.hacz.edu.jackson;
 import cn.hacz.edu.entity.AddressEntity;
 import cn.hacz.edu.entity.SkillEntity;
 import cn.hacz.edu.entity.UserEntity;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 
